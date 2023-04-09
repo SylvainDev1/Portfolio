@@ -6,3 +6,27 @@
 .card{
     transition: transform 300ms ease-in-out;
 }
+
+.initial{
+    display: none;
+}
+
+@keyframes confirm{
+    from {opacity:0%}
+    to {opacity:100%}
+    from{transform: translateY(-280px)}
+    to{transform: translateY(0px)}
+}
+
+.success{
+    transform: translateY(-280px);
+    opacity: 0%;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    animation-name: confirm;
+    animation-duration: 4s;
+}
+
+
+
